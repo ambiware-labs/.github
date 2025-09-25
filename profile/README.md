@@ -21,7 +21,7 @@ docker run --rm -p 4222:4222 nats:2.10-alpine -js
  go run ./cmd/loqad --config ./config/example.yaml
 ```
 
-Watch the logs for telemetry, bus connections, and skill activity. From here you can publish test events to subjects like `skill.timer.start` or connect additional services. A full getting-started walkthrough (including NATS tips, demo commands, and troubleshooting) is on the way alongside the MVP release. 
+Watch the logs for telemetry, bus connections, and skill activity. From here you can publish test events to subjects like `skill.timer.start` or connect additional services. See the [Getting Started guide](https://github.com/ambiware-labs/loqa-core/blob/main/docs/GETTING_STARTED.md) for detailed steps and troubleshooting.
 
 ## Repository Guide
 
