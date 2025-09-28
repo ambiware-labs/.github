@@ -2,7 +2,13 @@
 
 > Building Loqa — the local-first ambient intelligence platform that keeps your data on hardware you control.
 
-Welcome! Ambiware Labs stewards Loqa, an open-core stack for privacy-respecting assistants that run across Macs, Minis, Pis, and anything else on your LAN. This org profile highlights the key repositories, how to try the runtime today, and where to connect with the community.
+Welcome! Ambiware Labs stewards Loqa, an open-core stack for privacy-respecting assistants that run across Macs, Minis, Pis, and anything else on your LAN. We operate a **hybrid open-core model**:
+
+- **Public-good core** – the runtime, protocols, and tooling stay MIT-licensed forever.
+- **Modular extensibility** – skills and adapters plug in like VS Code extensions (see [`docs/skills/SPEC.md`](https://github.com/ambiware-labs/loqa-core/blob/main/docs/skills/SPEC.md)).
+- **Value-add ecosystem** – optional managed services, premium skills, and hardware bundles keep the project sustainable without touching your data (follow [loqa-meta#28](https://github.com/ambiware-labs/loqa-meta/issues/28) and [loqa-meta#29](https://github.com/ambiware-labs/loqa-meta/issues/29)).
+
+This org profile highlights the key repositories, how to try the runtime today, and where to connect with the community.
 
 ## Try Loqa in Minutes
 
@@ -37,6 +43,7 @@ Watch the logs for telemetry, bus connections, and skill activity. From here you
 - **GitHub Discussions** – Join the conversation in [Announcements, Ideas, Q&A, Show & Tell, and Polls](https://github.com/ambiware-labs/loqa-core/discussions).
 - **Security** – Report vulnerabilities to [security@ambiware.ai](mailto:security@ambiware.ai) and review our [Security Policy](https://github.com/ambiware-labs/loqa-meta/blob/main/SECURITY.md).
 - **Launch Announcement** – Read the [Ambiware Labs + Loqa introduction](https://ambiware.ai/blog/2025-09-25-ambiware-labs-loqa.html) for the story behind the project.
+- **Hybrid Model Update** – Learn about the [hybrid open-core strategy](https://ambiware.ai/blog/2025-09-28-loqa-hybrid-open-core-model.html) guiding our roadmap.
 
 ## Roadmap & Governance
 
