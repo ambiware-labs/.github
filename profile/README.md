@@ -1,8 +1,8 @@
-# Ambiware Labs
+# Loqa Labs
 
 > Building Loqa — the local-first ambient intelligence platform that keeps your data on hardware you control.
 
-Welcome! Ambiware Labs stewards Loqa, an open-core stack for privacy-respecting assistants that run across Macs, Minis, Pis, and anything else on your LAN. We operate a **hybrid open-core model**:
+Welcome! Loqa Labs stewards Loqa, an open-core stack for privacy-respecting assistants that run across Macs, Minis, Pis, and anything else on your LAN. We operate a **hybrid open-core model**:
 
 - **Public-good core** – the runtime, protocols, and tooling stay MIT-licensed forever.
 - **Modular extensibility** – skills and adapters plug in like VS Code extensions (see [`docs/skills/SPEC.md`](https://github.com/loqalabs/loqa-core/blob/main/docs/skills/SPEC.md)).
@@ -42,7 +42,7 @@ Watch the logs for telemetry, bus connections, and skill activity. From here you
 
 - **GitHub Discussions** – Join the conversation in [Announcements, Ideas, Q&A, Show & Tell, and Polls](https://github.com/loqalabs/loqa-core/discussions).
 - **Security** – Report vulnerabilities to [security@ambiware.ai](mailto:security@ambiware.ai) and review our [Security Policy](https://github.com/loqalabs/loqa-meta/blob/main/SECURITY.md).
-- **Launch Announcement** – Read the [Ambiware Labs + Loqa introduction](https://ambiware.ai/blog/2025-09-25-loqalabs-loqa.html) for the story behind the project.
+- **Launch Announcement** – Read the [Loqa Labs + Loqa introduction](https://ambiware.ai/blog/2025-09-25-loqalabs-loqa.html) for the story behind the project.
 - **Hybrid Model Update** – Learn about the [hybrid open-core strategy](https://ambiware.ai/blog/2025-09-28-loqa-hybrid-open-core-model.html) guiding our roadmap.
 
 ## Roadmap & Governance
