@@ -1,58 +1,82 @@
 # Loqa Labs
 
-> Building Loqa — the local-first ambient intelligence platform that keeps your data on hardware you control.
+**Local-first AI voice platform for privacy-conscious users.**
 
-Welcome! Loqa Labs stewards Loqa, an open-core stack for privacy-respecting assistants that run across Macs, Minis, Pis, and anything else on your LAN. We operate a **hybrid open-core model**:
+## 🎯 Current Focus: Meeting Transcription
 
-- **Public-good core** – the runtime, protocols, and tooling stay MIT-licensed forever.
-- **Modular extensibility** – skills and adapters plug in like VS Code extensions (see [`docs/skills/SPEC.md`](https://github.com/loqalabs/loqa-core/blob/main/docs/skills/SPEC.md)).
-- **Value-add ecosystem** – optional managed services, premium skills, and hardware bundles keep the project sustainable without touching your data (follow [loqa-meta#28](https://github.com/loqalabs/loqa-meta/issues/28) and [loqa-meta#29](https://github.com/loqalabs/loqa-meta/issues/29)).
+We're building AI-powered meeting transcription with Obsidian integration.
 
-This org profile highlights the key repositories, how to try the runtime today, and where to connect with the community.
+**[loqa-meetings](https://github.com/loqalabs/loqa-meetings)** - Record, transcribe, and summarize meetings 100% locally
 
-## Try Loqa in Minutes
+- 🎙️ Live recording or process existing audio
+- 📝 Incremental transcription (see partial transcript during meeting)
+- 🤖 AI summaries (key points, decisions, action items)
+- 👥 Speaker diarization
+- 📓 Obsidian integration
+- 🔒 100% local, privacy-first
 
-```bash
-# 1. Start NATS with JetStream enabled (example using Docker)
-docker run --rm -p 4222:4222 nats:2.10-alpine -js
+**Status**: Week 1 of 10-week MVP
 
-# 2. Clone the core runtime
- git clone https://github.com/loqalabs/loqa-core.git
- cd loqa-core
+---
 
-# 3. Build sample skills and validate manifests
- make skills
+## 🏗️ Architecture
 
-# 4. Launch the runtime with the example configuration
- go run ./cmd/loqad --config ./config/example.yaml
-```
+**[loqa-core](https://github.com/loqalabs/loqa-core)** - Stable foundation (Go)
 
-Watch the logs for telemetry, bus connections, and skill activity. From here you can publish test events to subjects like `skill.timer.start` or connect additional services. See the [Getting Started guide](https://github.com/loqalabs/loqa-core/blob/main/docs/GETTING_STARTED.md) for detailed steps and troubleshooting.
+- Speech-to-Text (Whisper)
+- LLM inference (Ollama)
+- Text-to-Speech (Kokoro)
+- NATS message bus
+- WASM skills runtime
 
-## Repository Guide
+**[loqa-meetings](https://github.com/loqalabs/loqa-meetings)** - Active development (Rust)
 
-| Repository | Description |
-| --- | --- |
-| [`loqa-core`](https://github.com/loqalabs/loqa-core) | Runtime, message bus integration, skills host, observability tooling, and sample skills. |
-| [`loqa-meta`](https://github.com/loqalabs/loqa-meta) | Governance, RFCs, roadmap, and community documentation. |
-| [`loqa-site`](https://github.com/loqalabs/loqa-site) | Marketing site and launch announcements for ambiware.ai. |
-| [`loqa-skills`](https://github.com/loqalabs/loqa-skills) | (In progress) Community skills gallery and additional examples. |
+- Meeting recording & transcription
+- Markdown generation
+- Obsidian integration
 
-## Community & Support
+---
 
-- **GitHub Discussions** – Join the conversation in [Announcements, Ideas, Q&A, Show & Tell, and Polls](https://github.com/loqalabs/loqa-core/discussions).
-- **Security** – Report vulnerabilities to [security@ambiware.ai](mailto:security@ambiware.ai) and review our [Security Policy](https://github.com/loqalabs/loqa-meta/blob/main/SECURITY.md).
-- **Launch Announcement** – Read the [Loqa Labs + Loqa introduction](https://ambiware.ai/blog/2025-09-25-loqalabs-loqa.html) for the story behind the project.
-- **Hybrid Model Update** – Learn about the [hybrid open-core strategy](https://ambiware.ai/blog/2025-09-28-loqa-hybrid-open-core-model.html) guiding our roadmap.
+## 🗺️ Roadmap
 
-## Roadmap & Governance
+- **Phase 1** (Now): Meeting transcription ✅ In progress
+- **Phase 2** (Q1 2026): Chat assistant with RAG over Obsidian vault
+- **Phase 3** (Q2 2026): Real-time voice chat
+- **Phase 4** (Q3 2026): Full voice assistant
 
-We maintain the [MVP backlog](https://github.com/loqalabs/loqa-meta/blob/main/roadmap/MVP_BACKLOG.md) and RFC process in `loqa-meta`. Contribution guidelines, code of conduct, and governance model live there as well.
+See [Vision & Roadmap](https://github.com/loqalabs/loqa-meta/blob/main/docs/vision.md) for details.
 
-## Stay in Touch
+---
 
-- Website: [ambiware.ai](https://ambiware.ai)
-- Email: [hello@ambiware.ai](mailto:hello@ambiware.ai)
-- GitHub: [@loqalabs](https://github.com/loqalabs)
+## 💡 Philosophy
 
-Let’s prove ambient intelligence can be fast, thoughtful, and private.
+- **Local-first**: All processing on your hardware
+- **Privacy-first**: Zero external connections by default
+- **Open Core**: MIT-licensed core, optional premium features
+- **Composable**: Swap LLMs, STT engines, storage backends
+- **Ambient technology**: Work normally, technology in background
+
+---
+
+## 📚 Documentation
+
+**[loqa-meta](https://github.com/loqalabs/loqa-meta)** - Strategy, RFCs, architecture decisions
+
+---
+
+## 🤝 Contributing
+
+We're currently in MVP development (Phase 1). Contributions will open after the initial release.
+
+Interested in the vision? Star ⭐ [loqa-meetings](https://github.com/loqalabs/loqa-meetings) and watch for updates!
+
+---
+
+## 📄 License
+
+- **Code**: MIT (Open Core)
+- **Docs**: CC BY 4.0
+
+---
+
+**Follow our journey**: [Strategy docs](https://github.com/loqalabs/loqa-meta) • [Roadmap](https://github.com/loqalabs/loqa-meta/blob/main/docs/vision.md)
